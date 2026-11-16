@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fam3</title>
+
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0d0d0d;
+    font-family:Georgia, serif;
+    color:white;
+    line-height:1.6;
+}
+
+section{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+    padding:60px 0;
+}
+
+.section-title{
+    text-align:center;
+    color:gold;
+    font-size:2.2rem;
+    margin-bottom:30px;
+}
+
+.card{
+    background:#151515;
+    border:2px solid gold;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 0 20px rgba(255,215,0,.15);
+}
+
+/* FAMILY TREE */
+
+.tree-container{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+
+.generation-title{
+    text-align:center;
+    color:gold;
+    font-size:1.8rem;
+}
+
+.generation{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.member{
+    width:300px;
+    background:#111;
+    border:2px solid gold;
+    border-radius:15px;
+    text-align:center;
+    padding:15px;
+    transition:.3s;
+}
+
+.member:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px gold;
+}
+
+.member img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid gold;
+}
+
+.member h3{
+    margin-top:12px;
+    color:gold;
+}
+
+.member p{
+    color:#ddd;
+}
+
+nav {
+    width: 100%;
+    background: rgba(0,0,0,0.96);
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #b89632;
+}
+
+.logo {
+    color: gold;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 10px 0;
+}
+
+.nav-links a:hover {
+    color: gold;
+}
+
+/* HOME DROPDOWN */
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    width: 220px;
+    background: #151515;
+    border: 1px solid gold;
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 18px;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background: #29220e;
+    padding-left: 25px;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+header h5 {
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    color: gold;
+    letter-spacing: 7px;
+    text-shadow: 3px 3px 15px black;
+    animation: fadeIn 1.5s ease;
+}
+
+
+
+.hero-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 35px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+
+    <div class="logo">AQUINO</div>
+
+    <ul class="nav-links">
+
+        <!-- HOME WITH THREE DROPDOWN PAGES -->
+
+        <li class="dropdown">
+            <a href="#home">☰ ▾</a>
+
+            <ul class="dropdown-menu">
+                <li><a href="fam3.html">Family Tree</a></li>
+                <li><a href="kailan.html">Family History</a></li>
+                <li><a href="posneg.html">Positive and Negative Contributions</a></li>
+                <li><a href="kontrobersya.html">Controversies, Present Image, and Reflection</a></li>
+            </ul>
+
+        <li>
+            <a href="final.html">Home</a>
+        </li>
+        </li>
+
+    </ul>
+
+</nav>
+
+    <section>
+
+<header>
+    <h5>The 5 Generations Family Tree of Aquinos</h5>
+</header>
+
+<hr>
+<br>
+<br>
+
+<div class="tree-container">
+
+<!-- GEN 1 -->
+
+<h3 class="generation-title">1st Generation</h3>
+
+<div class="generation">
+
+<div class="member">
+<img src="servil.webp" alt="">
+<h3>Servillano Aquino</h3>
+<p>(1874-1959)</p>
+<div class="card">
+    Revolutionary general during the Philippine Revolution 
+    and Philippine-American War. Considered the patriarch of 
+    the Aquino political clan.
+</div>
+</div>
+
+</div>
+
+<!-- GEN 2 -->
+
+<h3 class="generation-title">2nd Generation</h3>
+
+<div class="generation">
+
+<div class="member">
+<img src="bensr.jpg" alt="">
+<h3>Benigno S. Aquino Sr.</h3>
+<p>(1894–1947)</p>
+<div class="card">
+    Son of Servillano Aquino.
+    Served as Speaker of the National Assembly during 
+    World War II.
+</div>
+</div>
+
+<div class="member">
+<img src="aurora.jpg" alt="">
+<h3>Aurora Aquino</h3>
+<p>(1910–1998)</p>
+<div class="card">
+    She was married to Benigno Aquino Sr. and was the mother 
+    of Benigno "Ninoy" Aquino Jr..
+</div>
+</div>
+
+</div>
+
+<!-- GEN 3 -->
+
+<h3 class="generation-title">3rd Generation</h3>
+
+<div class="generation">
+
+<div class="member">
+<img src="jr.jpg" alt="">
+<h3>Benigno "Ninoy" Aquino Jr.</h3>
+<p>(1932–1983)</p>
+<br>
+<br>
+<div class="card">
+    Son of Benigno Aquino Sr. Senator and leading opposition figure against the 
+    Marcos regime. His assassination became a catalyst for the 1986 People Power 
+    Revolution.
+</div>
+</div>
+
+<div class="member">
+<img src="voots.webp" alt="">
+<h3>Agapito "Butz" Aquino</h3>
+<p>(1939–2015)</p>
+<br>
+<br>
+<br>
+<br>
+<div class="card">
+    Former Senator of the Philippines from 1987 to 1995.
+    Served as Congressman of Makati's 2nd District from 1998 to 2007.
+</div>
+</div>
+
+<div class="member">
+<img src="cory.jpg" alt="">
+<h3>María Corazón "Cory" Sumulong Cojuangco-Aquino</h3>
+<p>(1933-2009)</p>
+<div class="card">
+    She served as the 11th President of the Philippines from February 25, 1986, to June 30, 1992. She 
+    was the first female president of the Philippines and became a symbol of democracy after the 1986 
+    People Power Revolution that ended the rule of Ferdinand Marcos.
+</div>
+</div>
+
+</div>
+
+<!-- GEN 4 -->
+
+<h3 class="generation-title">4th Generation</h3>
+
+<div class="generation">
+
+<div class="member">
+<img src="iii.jpg" alt="">
+<h3>Benigno "Noynoy" Aquino III</h3>
+<p>(1960-2021)</p>
+<br>
+<br>
+<div class="card">
+    Son of Ninoy Aquino and Corazon Aquino.
+    Served as the 15th President of the Philippines from 2010 to 2016.
+</div>
+</div>
+
+<div class="member">
+<img src="kris.jpg" alt="">
+<h3>Kris Aquino</h3>
+<p>(1971)</p>
+<br>
+<br>
+<br>
+<div class="card">
+    Kris Aquino has never held an elected government position. She is known primarily 
+    for her career in television, film, and media rather than politics.
+</div>
+</div>
+
+<div class="member">
+<img src="bam.png" alt="">
+<h3>Paolo Benigno "Bam" Aguirre Aquino IV</h3>
+<p>(1977)</p>
+<div class="card">
+    Known for sponsoring and supporting laws related to:
+Free college education (Universal Access to Quality Tertiary Education Act)
+Entrepreneurship and small businesses (Go Negosyo Act)
+Youth development and education
+</div>
+</div>
+
+</div>
+
+<!-- GEN 5 -->
+
+<h3 class="generation-title">5th Generation</h3>
+
+<div class="generation">
+
+<div class="member">
+<img src="josh.avif" alt="">
+<h3>Joshua Aquino</h3>
+<p>(1995)</p>
+<div class="card">
+    Known as the son of Kris Aquino. He has appeared in political campaign activities, 
+    but has never held public office.
+</div>
+</div>
+
+<div class="member">
+<img src="bimb.jpg" alt="">
+<h3>James Carlos "Bimby" Aquino Yap Jr.</h3>
+<p>(2007)</p>
+<div class="card">
+    Son of Kris Aquino. Reports have mentioned the possibility of a future political career, 
+    but he has not held any government office
+</div>
+</div>
+
+<div class="member">
+<img src="kiko.jpg" alt="">
+<h3>Francis Joseph "Kiko" Aquino Dee</h3>
+<p>(1991)</p>
+<div class="card">
+<p>Political activist, scholar, and civic leader. 
+   Serves in advocacy and civil society roles, including involvement with the Ninoy and Cory 
+   Foundation and democratic reform campaigns.
+</p>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<hr>
+
+</section>
+</body>
+</html>

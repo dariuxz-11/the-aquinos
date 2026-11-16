@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posneg</title>
+
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0d0d0d;
+    font-family:Georgia, serif;
+    color:white;
+    line-height:1.6;
+}
+
+section{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+    padding:60px 0;
+}
+
+.section-title{
+    text-align: center;
+    color:gold;
+    font-size:2.2rem;
+    margin-bottom:30px;
+}
+
+.section-title2{
+    color:gold;
+    font-size:2.2rem;
+    margin-bottom:30px;
+}
+
+.card{
+    background:#151515;
+    border:2px solid gold;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 0 20px rgba(255,215,0,.15);
+}
+
+nav {
+    width: 100%;
+    background: rgba(0,0,0,0.96);
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #b89632;
+}
+
+.logo {
+    color: gold;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 10px 0;
+}
+
+.nav-links a:hover {
+    color: gold;
+}
+
+/* HOME DROPDOWN */
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    width: 220px;
+    background: #151515;
+    border: 1px solid gold;
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 18px;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background: #29220e;
+    padding-left: 25px;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+header h5 {
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    color: gold;
+    letter-spacing: 7px;
+    text-shadow: 3px 3px 15px black;
+    animation: fadeIn 1.5s ease;
+}
+
+
+
+.hero-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 35px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+
+    <div class="logo">AQUINO</div>
+
+    <ul class="nav-links">
+
+        <!-- HOME WITH THREE DROPDOWN PAGES -->
+
+        <li class="dropdown">
+            <a href="#home">☰ ▾</a>
+
+            <ul class="dropdown-menu">
+                <li><a href="fam3.html">Family Tree</a></li>
+                <li><a href="kailan.html">Family History</a></li>
+                <li><a href="posneg.html">Positive and Negative Contributions</a></li>
+                <li><a href="kontrobersya.html">Controversies, Present Image, and Reflection</a></li>
+            </ul>
+
+        <li>
+            <a href="final.html">Home</a>
+        </li>
+        </li>
+
+    </ul>
+
+</nav>
+
+    <section>
+
+<header>
+    <h5>Positive and Negative Contributions to the Philippines</h5>
+</header>
+<br>
+<br>
+<div class="card">
+<p style="text-align: center;">The Aquino family played a significant role in the history and 
+    politics of the Philippines. 
+    <br>
+    They made contributions that helped the country, but they also 
+    made decisions and experienced events<br>
+     that resulted in criticism and controversies.</p>
+</div>    
+<br>
+<hr>
+<br>
+<br>
+
+<h2 class="section-title2">Positive Contributions</h2>
+<div class="card">
+<p>The Aquino family made significant contributions to Philippine history. They helped restore 
+    democracy after the Marcos dictatorship, particularly through the 1986 People Power Revolution. 
+    They also became symbols of the struggle for freedom, human rights, and the establishment of 
+    a democratic government.
+    <br>
+    <br>
+
+In addition, they introduced programs aimed at improving education, livelihood, and the country's 
+economy. They also inspired many Filipinos to stand up for their rights and participate in the 
+development of society.</p>
+
+</div>
+
+</section>
+
+<!-- NEGATIVE -->
+<section>
+<h2 class="section-title2">Negative Contributions</h2>
+<div class="card">
+<p>Despite their positive contributions, the Aquino family also faced criticism and controversies. 
+    The implementation of some reforms, particularly those concerning poverty and land distribution, 
+    was slow. There were also government issues involving corruption, inadequate responses to 
+    certain natural disasters, and controversies related to the use of public funds.
+    <br>
+    <br>
+
+Furthermore, their family's continued influence in politics was criticized because of concerns 
+about political dynasties. As a result, some Filipinos believe that the changes they brought were 
+not enough to address all the country's problems.</p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h2 class="section-title2">Conclusion</h2>
+<div class="card">
+<p>Overall, the Aquino family had both positive and negative effects on the Philippines. 
+    They helped restore democracy and shape the country's history, but they also had 
+    shortcomings and controversies that affected their leadership and reputation. This shows 
+    the importance of evaluating their contributions fairly and based on historical events 
+    and evidence.</p>
+
+</div>
+
+</section>
+</body>
+</html>

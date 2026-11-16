@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kailan</title>
+
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0d0d0d;
+    font-family:Georgia, serif;
+    color:white;
+    line-height:1.6;
+}
+
+section{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+    padding:60px 0;
+}
+
+.section-title{
+    text-align:center;
+    color:gold;
+    font-size:2.2rem;
+    margin-bottom:30px;
+}
+
+.card{
+    background:#151515;
+    border:2px solid gold;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 0 20px rgba(255,215,0,.15);
+}
+
+/* FAMILY TREE */
+
+.tree-container{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+
+.generation-title{
+    text-align:center;
+    color:gold;
+    font-size:1.8rem;
+}
+
+.generation{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.member{
+    width:300px;
+    background:#111;
+    border:2px solid gold;
+    border-radius:15px;
+    text-align:center;
+    padding:15px;
+    transition:.3s;
+}
+
+.member:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px gold;
+}
+
+.member img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid gold;
+}
+
+.member h3{
+    margin-top:12px;
+    color:gold;
+}
+
+.member p{
+    color:#ddd;
+}
+
+nav {
+    width: 100%;
+    background: rgba(0,0,0,0.96);
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #b89632;
+}
+
+.logo {
+    color: gold;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 10px 0;
+}
+
+.nav-links a:hover {
+    color: gold;
+}
+
+/* HOME DROPDOWN */
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    width: 220px;
+    background: #151515;
+    border: 1px solid gold;
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 18px;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background: #29220e;
+    padding-left: 25px;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+header h5 {
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    color: gold;
+    letter-spacing: 7px;
+    text-shadow: 3px 3px 15px black;
+    animation: fadeIn 1.5s ease;
+}
+
+
+
+.hero-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 35px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+
+    <div class="logo">AQUINO</div>
+
+    <ul class="nav-links">
+
+        <!-- HOME WITH THREE DROPDOWN PAGES -->
+
+        <li class="dropdown">
+            <a href="#home">☰ ▾</a>
+
+            <ul class="dropdown-menu">
+                <li><a href="fam3.html">Family Tree</a></li>
+                <li><a href="kailan.html">Family History</a></li>
+                <li><a href="posneg.html">Positive and Negative Contributions</a></li>
+                <li><a href="kontrobersya.html">Controversies, Present Image, and Reflection</a></li>
+            </ul>
+
+        <li>
+            <a href="final.html">Home</a>
+        </li>
+        </li>
+
+    </ul>
+
+</nav>
+  
+    <section>
+
+    <header>
+        <h5>When Did the History of the Aquino Family Begin?</h5>
+    </header>
+
+<div class="card">
+<p>
+    The Aquino family is one of the well-known political families in the Philippines, originating 
+    from the province of Tarlac. Their prominence in society began with General Servillano 
+    “Mianong” Aquino, who was born on April 20, 1874, in Angeles, Pampanga. He became a general 
+    during the Philippine Revolution against the Spaniards and served as a delegate to the Malolos 
+    Congress in 1898.
+    <br>
+    <br>
+
+    The family's influence grew further when his son, Benigno Aquino Sr., entered politics. He was 
+    elected as the representative of the Second District of Tarlac and later became a senator. 
+    He also served as the Speaker of the National Assembly during the Second Philippine Republic. 
+    Because of his government positions and connections with prominent families in Tarlac, the 
+    Aquino family became increasingly recognized in politics.
+    <br>
+    <br>
+
+    Their political influence continued through Benigno “Ninoy” Aquino Jr., who served as the 
+    mayor of Concepcion, governor of Tarlac, and senator. He became well-known for opposing the 
+    administration of Ferdinand Marcos and the implementation of Martial Law. On August 21, 1983, 
+    he was assassinated upon his return to the Philippines, and his death strengthened the movement 
+    against dictatorship.
+    <br>
+    <br>
+
+    After his death, his wife, Corazon “Cory” Aquino, became an important leader in Philippine 
+    history. She led the opposition during the 1986 People Power Revolution, which resulted in the 
+    end of Marcos's rule. She was elected as the 11th President of the Philippines and served from 
+    1986 to 1992.
+    <br>
+    <br>
+
+    The family's political influence continued through their son, Benigno “Noynoy” Aquino III, who 
+    served as a congressman, senator, and the 15th President of the Philippines from 2010 to 2016. 
+    Because several members of the family held high positions in government, the Aquino family 
+    became one of the most recognized political dynasties in the Philippines.
+    <br>
+    <br>
+
+</p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h4 class="section-title2">They Gained Power and Influence Through:</h4>
+<ol>
+
+<div class="card">
+    <li><h3 style="color: gold;">Historical Legacy</h3> – Their family name first became 
+        prominent through Servillano Aquino's participation in the Philippine Revolution.</li>
+    <li><h3 style="color: gold;">Entry into Politics</h3> – Benigno Aquino Sr. gained the trust 
+        of voters and held important positions in the government.</li>
+    <li><h3 style="color: gold;">Connections with Powerful Families</h3> – Their influence was 
+        also strengthened through their connection with the Cojuangco family.</li>
+    <li><h3 style="color: gold;">Fight for Democracy</h3> – Ninoy and Cory Aquino became 
+        symbols of resistance against dictatorship.</li>
+    <li><h3 style="color: gold;">Continued Government Service</h3> – Their family's political 
+        legacy continued through Noynoy Aquino and other relatives.</li>
+</ol>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h4 class="section-title2">Conclusion</h4>
+<div class="card">
+<p>Overall, the influence of the Aquino family began with their role in Philippine history 
+    and grew stronger through their involvement in politics, connections with other prominent 
+    families, and participation in significant events in the country. They became well-known 
+    not only because of their political power but also because of their contributions and role 
+    in shaping the history of democracy in the Philippines.</p>
+</div>
+<br>
+<br>
+<hr>
+
+</section>
+    
+</body>
+</html>

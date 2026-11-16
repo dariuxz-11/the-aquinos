@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0d0d0d;
+    font-family:Georgia, serif;
+    color:white;
+    line-height:1.6;
+}
+
+section{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+    padding:60px 0;
+}
+
+.section-title{
+    text-align:center;
+    color:gold;
+    font-size:2.2rem;
+    margin-bottom:30px;
+}
+
+.card{
+    background:#151515;
+    border:2px solid gold;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 0 20px rgba(255,215,0,.15);
+}
+
+nav {
+    width: 100%;
+    background: rgba(0,0,0,0.96);
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #b89632;
+}
+
+.logo {
+    color: gold;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 10px 0;
+}
+
+.nav-links a:hover {
+    color: gold;
+}
+
+/* HOME DROPDOWN */
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    width: 220px;
+    background: #151515;
+    border: 1px solid gold;
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 18px;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background: #29220e;
+    padding-left: 25px;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+header h5 {
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    color: gold;
+    letter-spacing: 7px;
+    text-shadow: 3px 3px 15px black;
+    animation: fadeIn 1.5s ease;
+}
+
+
+
+.hero-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 35px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <nav>
+
+    <div class="logo">AQUINO</div>
+
+    <ul class="nav-links">
+
+        <!-- HOME WITH THREE DROPDOWN PAGES -->
+
+        <li class="dropdown">
+            <a href="#home">☰ ▾</a>
+
+            <ul class="dropdown-menu">
+                <li><a href="fam3.html">Family Tree</a></li>
+                <li><a href="kailan.html">Family History</a></li>
+                <li><a href="posneg.html">Positive and Negative Contributions</a></li>
+                <li><a href="kontrobersya.html">Controversies, Present Image, and Reflection</a></li>
+            </ul>
+
+        <li>
+            <a href="final.html">Home</a>
+        </li>
+        </li>
+
+    </ul>
+
+</nav>
+
+    <section>
+
+<header>
+    <h5>Controversies</h5>
+</header>
+<br>
+
+<div class="card">
+
+<p>Despite the Aquino family's significant role in Philippine history, they were not free 
+    from various controversies and criticisms. One of the major issues was Hacienda Luisita, 
+    where the distribution of land to farmers was questioned.
+<br>
+<br>
+The Mendiola Massacre in 1987 also became controversial, in which several farmers were 
+killed while protesting for land reform.
+<br>
+<br>
+Meanwhile, during the administration of Benigno "Noynoy" Aquino III, the Mamasapano Incident 
+in 2015 became controversial, resulting in the deaths of 44 members of the Special Action Force 
+(SAF).
+<br>
+<br>
+The government's slow response to the effects of Typhoon Yolanda in 2013 was also criticized, 
+along with the Disbursement Acceleration Program (DAP), which raised legal questions regarding 
+the use of public funds.
+</p>
+</div>
+<br>
+<hr>
+<br>
+
+<h2 class="section-title">Present Image</h2>
+<div class="card">
+<p>
+    Today, the Aquino family remains one of the well-known names in Philippine politics and 
+    history, but their political power is no longer as strong as it was during the time of Cory 
+    and Noynoy Aquino.
+    <br>
+    <br>
+For their supporters, they remain symbols of democracy, freedom, and resistance against 
+dictatorship. However, for their critics, they are also remembered for controversies, shortcomings 
+in governance, and the failure to fully fulfill some promises to the nation.
+<br>
+<br>
+According to a report by the Philippine Center for Investigative Journalism in 2025, the family's 
+influence in national politics weakened after Noynoy Aquino left the presidency in 2016. 
+Nevertheless, their name remains present in public consciousness and in discussions about the 
+country's history.
+</p>
+</div>
+<br>
+<hr>
+<br>
+
+<h2 class="section-title">Reflection</h2>
+<div class="card">
+<p>The history of the Aquino family teaches us that having power and influence comes with great 
+    responsibility. Being famous or coming from a powerful family is not enough to be considered 
+    a good leader. Every leader must demonstrate honesty, compassion, accountability, and a 
+    genuine desire to improve the lives of the people.
+    <br>
+    <br>
+We also learn the importance of examining both the positive and negative contributions of a 
+family or leader. We should not simply believe in their name, promises, or popularity. Instead, 
+we must look at their actions, decisions, and their effects on the country.
+<br>
+<br>
+As citizens, it is our responsibility to think critically, seek the truth about history, and 
+choose leaders who prioritize the welfare of the nation over their personal interests.</p>
+</div>
+
+</section>
+</body>
+</html>
